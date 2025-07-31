@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>History of Expenses</title>
+  <link rel="stylesheet" href="./css/history.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header class="main-header">
+      <div class="header">
+        <div class="header-icon"><img src="./images/pie.png" alt="" srcset=""></div>
+        <div class="date-filter">
+          <span>July 2025</span>
+          <span class="search-icon">🔍</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="history-card">
+        <h2>History of Expenses</h2>
+
+        <div class="expense-date">July 19 2025</div>
+        <div class="expense-item">
+          <div class="expense-left">
+            <div class="icon"><img src="./images/food.png" alt="Food" style="width: 24px; height: 24px;"></div>
+            <div>
+              <div class="label">Food</div>
+              <div class="time">Sat 12:19 pm</div>
+            </div>
+          </div>
+          <div class="amount">35.00</div>
+        </div>
+
+        <div class="expense-item">
+          <div class="expense-left">
+            <div class="icon"><img src="./images/transpo.png" alt="Transportation" style="width: 24px; height: 24px;"></div>
+            <div>
+              <div class="label">Transportation</div>
+              <div class="time">Sat 5:00 pm</div>
+            </div>
+          </div>
+          <div class="amount">15.00</div>
+        </div>
+
+        <div class="expense-date">July 18 2025</div>
+        <div class="expense-item">
+          <div class="expense-left">
+            <div class="icon"><img src="./images/shopping.png" alt="Shopping" style="width: 24px; height: 24px;"></div>
+            <div>
+              <div class="label">Shopping</div>
+              <div class="time">Fri 10:30 am</div>
+            </div>
+          </div>
+          <div class="amount">89.00</div>
+        </div>
+
+        <div class="expense-date">July 16 2025</div>
+        <div class="expense-item">
+          <div class="expense-left">
+            <div class="icon"><img src="./images/coffee.png" alt="Coffee" style="width: 24px; height: 24px;"></div>
+            <div>
+              <div class="label">Coffee</div>
+              <div class="time">Wed 7:08 am</div>
+            </div>
+          </div>
+          <div class="amount">39.00</div>
+        </div>
+      </div>
+    </main>
+
+    <div class="fab">+</div>
+
+    <footer class="main-footer">
+      <nav class="bottom-nav">
+        <div class="nav-item" id="homeNav">
+          <img src="./images/home.png" alt="Home" style="width: 24px; height: 24px;">
+          <span>Home</span>
+        </div>
+        <div class="nav-item">
+          <img src="./images/calendar.png" alt="Calendar" style="width: 24px; height: 24px;">
+          <span>Calendar</span>
+        </div>
+        <div class="nav-item active">
+          <img src="./images/seearch.png" alt="Search" style="width: 24px; height: 24px;">
+          <span>Search</span>
+        </div>
+        <div class="nav-item">
+          <img src="./images/prof.png" alt="Profile" style="width: 24px; height: 24px;">
+          <span>Profile</span>
+        </div>
+      </nav>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('homeNav').addEventListener('click', function() {
+      window.location.href = 'home.html'; 
+    });
+  </script>
+</body>
+</html>
